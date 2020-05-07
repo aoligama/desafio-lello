@@ -13,7 +13,8 @@ export class MembersApiService {
 
   constructor(private http: HttpClient) { }
 
-  getMembers() : Observable<any>{
+  /* Método GET para buscar os dados na API */
+  getAllMembers() : Observable<any>{
     return this.http.get<any>(this.URL_API)
     .pipe( map((data: any) => data) )
   }
