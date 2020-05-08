@@ -16,13 +16,15 @@ import { MembersComponent } from './members/members.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule }   from '@angular/forms';
 import { ProfileComponent } from './members/profile/profile.component';
+
+
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     MemberComponent,
     MembersComponent,
-    ProfileComponent
+    ProfileComponent,
   ],
   imports: [
     BrowserModule,
@@ -35,9 +37,10 @@ import { ProfileComponent } from './members/profile/profile.component';
     MatIconModule,
     MatListModule,
     HttpClientModule,
-    FormsModule 
+    FormsModule, 
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents: [ProfileComponent] // Profile component será carregado depois que o modulo já existir
 })
 export class AppModule { }
