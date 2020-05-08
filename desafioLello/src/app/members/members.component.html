@@ -11,13 +11,14 @@
                   required
                 />
               </div>
-              <button type="submit" (click)="getMembers(this.github_login)">Buscar</button>
+              <small>Deixe em branco pra buscar todos.</small>
+              <button type="submit" class="btn" (click)="getMembers(this.github_login)">Buscar</button>
         </form>
 
       </aside>
     <main>
         <ul>
-            <app-member *ngFor="let member of allmembers | async" [member]="member"></app-member>
+          <app-member *ngFor="let member of allmembers | async" [member]="member"></app-member>
         </ul>
     </main>
 </div>

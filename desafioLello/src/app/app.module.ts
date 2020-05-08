@@ -15,12 +15,14 @@ import { MemberComponent } from './members/member/member.component';
 import { MembersComponent } from './members/members.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule }   from '@angular/forms';
+import { ProfileComponent } from './members/profile/profile.component';
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     MemberComponent,
-    MembersComponent
+    MembersComponent,
+    ProfileComponent
   ],
   imports: [
     BrowserModule,
