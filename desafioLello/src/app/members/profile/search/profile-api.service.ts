@@ -17,7 +17,7 @@ export class ProfileApiService {
   getInfoMember(github_login) : Observable<any>{
 
     // Carrega os dados do membro selecionado
-    this.URL_API = `https://api.github.com/users/${github_login.value}`;
+    this.URL_API = `https://api.github.com/users/${github_login}`;
     return this.http.get<any>(this.URL_API)
     .pipe( map((data: any) => [data]) )
     

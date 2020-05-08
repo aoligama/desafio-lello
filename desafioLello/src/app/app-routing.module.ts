@@ -12,7 +12,7 @@ const routes: Routes = [
     path: 'members', component: MembersComponent //rota dos membros 
   },
   { 
-    path: 'home/:username', component: ProfileComponent 
+    path: 'members/:github_login', component: ProfileComponent 
   },
 ];
 

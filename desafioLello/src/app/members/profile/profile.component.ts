@@ -17,12 +17,12 @@ export class ProfileComponent implements OnInit {
   profile: Observable<any>
 
   ngOnInit(): void {
-    const username = this.activatedRoute.snapshot.paramMap.get('username'); // pega o parâmetro username da rota ativada
-    console.log(username);
-    this.getProfile(username);
+    const github_login = this.activatedRoute.snapshot.paramMap.get('github_login'); // pega o parâmetro username da rota ativada
+    console.log(github_login);
+    this.getProfile(github_login);
   }
 
-  getProfile(username){
+  getProfile(github_login){
     this.profile = this.profileSvc.getInfoMember(''); // parametro da rota da URL
   }
 
