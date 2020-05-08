@@ -2,7 +2,7 @@
     <header>
         <img src="{{member.avatar_url}}" />
         <div class="user-info">
-            <strong> {{member.login}} </strong>
+            <strong (click)="goToMemberProfile(member.login)"> {{member.login}} </strong>
         </div>
     </header>
 </li>
