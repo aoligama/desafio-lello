@@ -87,6 +87,12 @@ aside form button:hover {
     background: #6931CA;
 }
 
+@media (max-width: 650px) {
+    main ul {
+        grid-template-columns: 1fr;
+        margin-left: 30px;
+    }
+}
 
 @media (max-width: 1000px) {
     #app {
