@@ -7,6 +7,7 @@
 }
 
 main {
+    margin-top: 15px !important;
     flex: 1;
 }
 
@@ -18,7 +19,7 @@ main ul {
 }
 
 aside {
-    margin-top: 15px;
+    margin-top: 15px !important;
     width: 320px;
     background: #FFF;
     box-shadow: 0 0 14px 0 rgba(0, 0, 0, 0.2);
@@ -86,11 +87,6 @@ aside form button:hover {
     background: #6931CA;
 }
 
-@media (max-width: 650px) {
-    main ul {
-        grid-template-columns: 1fr;
-    }
-}	
 
 @media (max-width: 1000px) {
     #app {
