@@ -1,5 +1,22 @@
-<main>
-    <ul *ngFor="let member of allmembers | async">
-        <app-member [member]="member"></app-member>
-    </ul>
-</main>
+<div id="app">
+    <aside>
+        <strong>Filtrar</strong>
+        <form>
+            <div class="input-block">
+                <label for="github_login">Usuário do Github</label>
+                <input 
+                  name="github_login" 
+                  id="github_login" 
+                  required
+                />
+              </div>
+              <button type="submit">Buscar</button>
+        </form>
+
+      </aside>
+    <main>
+        <ul>
+            <app-member *ngFor="let member of allmembers | async" [member]="member"></app-member>
+        </ul>
+    </main>
+</div>
