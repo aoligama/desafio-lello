@@ -15,7 +15,6 @@ export class ProfileApiService {
 
   /* Método GET para buscar os dados do membro selecionadp pelo usuário */
   getInfoMember(github_login) : Observable<any>{
-
     // Carrega os dados do membro selecionado
     this.URL_API = `https://api.github.com/users/${github_login}`;
     return this.http.get<any>(this.URL_API)

@@ -23,7 +23,7 @@ export class ProfileComponent implements OnInit {
   }
 
   getProfile(github_login){
-    this.profile = this.profileSvc.getInfoMember(''); // parametro da rota da URL
+    this.profile = this.profileSvc.getInfoMember(github_login); // parametro da rota da URL
   }
 
 }

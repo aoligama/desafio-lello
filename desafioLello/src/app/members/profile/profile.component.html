@@ -1,1 +1,38 @@
-<p>profile works!</p>
+<div class="content" *ngFor="let data of profile | async">
+    <div class="row" >
+        <div class="col-9">
+            <img src="{{data.avatar_url}}">
+        </div>
+        <div class="col-3">
+            <a class="btn btn-outline-secondary pull-right" href="{{data.html_url}}">
+                Ver no GitHub
+            </a>
+        </div>
+    </div>
+    <div class="row login">
+        <div class="col-12">
+            <strong> {{data.login}} </strong>
+        </div>
+        
+    </div>
+    <hr>
+    <div class="d-flex justify-content-center">
+        <div class="flex-fill">
+            <span>{{data.public_repos}}</span>
+            <br>
+            <small>REPOSITÓRIOS</small>
+        </div>
+        <div class="flex-fill">
+            <span>{{data.followers}}</span>
+            <br>
+            <small>SEGUIDORES</small>
+        </div>
+        <div class="flex-fill">
+            <span>{{data.created_at.split('T')[0].split('-').reverse().join('/')}}</span>
+            
+            <br>
+            <small>MEMBRO DESDE</small>
+        </div>
+    </div>
+        
+</div>
