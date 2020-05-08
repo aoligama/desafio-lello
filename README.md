@@ -11,7 +11,7 @@ Possuir o Angular CLI instalado na máquina.
 
 ```npm install -g @angular/cli```
 
-## Como Instalar
+## Como Usar
 
 1. Baixe o repositório
 2. Acesse a pasta via terminal
