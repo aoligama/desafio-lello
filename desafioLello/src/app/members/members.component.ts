@@ -8,15 +8,16 @@ import { Observable } from 'rxjs';
 })
 export class MembersComponent implements OnInit {
 
+
   constructor(private memberSvc: MembersApiService) { }
   allmembers: Observable<any>;
   
   ngOnInit(): void {
-    this.getMembers();
+    this.getMembers(''); // busca todos os membros ao iniciar a tela
   }
 
-  getMembers(){
-    this.allmembers = this.memberSvc.getAllMembers()
+  getMembers(github_login: string){
+    this.allmembers = this.memberSvc.getAllMembers(github_login) // acessa serviço de busca dos membros
   }
 
 }

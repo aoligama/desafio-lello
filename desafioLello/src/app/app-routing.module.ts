@@ -8,7 +8,7 @@ const routes: Routes = [
     path: '', redirectTo: '/members', pathMatch: 'full'
   },
   {
-    path: 'members', component: MembersComponent
+    path: 'members', component: MembersComponent //rota dos membros 
   }
 ];
 

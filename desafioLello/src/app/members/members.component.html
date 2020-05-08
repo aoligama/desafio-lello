@@ -7,10 +7,11 @@
                 <input 
                   name="github_login" 
                   id="github_login" 
+                  #github_login
                   required
                 />
               </div>
-              <button type="submit">Buscar</button>
+              <button type="submit" (click)="getMembers(this.github_login)">Buscar</button>
         </form>
 
       </aside>
