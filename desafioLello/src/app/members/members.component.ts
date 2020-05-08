@@ -12,7 +12,7 @@ export class MembersComponent implements OnInit {
   allmembers: Observable<any>;
   
   ngOnInit(): void {
-    //this.getMembers(''); // busca todos os membros ao iniciar a aplicação
+    this.getMembers(''); // busca todos os membros ao iniciar a aplicação
   }
 
   getMembers(github_login: string){
