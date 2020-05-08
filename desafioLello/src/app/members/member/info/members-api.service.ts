@@ -16,8 +16,7 @@ export class MembersApiService {
 
   /* Método GET para buscar os dados na API */
   getAllMembers(github_login) : Observable<any>{
-  
-    if(github_login.value != ''){ // Verifica se um login foi digitado
+    if(github_login.value != '' && github_login.value !== undefined){ // Verifica se um login foi digitado
       // Filtra membros
       this.URL_API = `https://api.github.com/users/${github_login.value}`;
       return this.http.get<any>(this.URL_API)
